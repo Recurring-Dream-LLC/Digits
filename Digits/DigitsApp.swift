@@ -11,7 +11,10 @@ import SwiftUI
 struct DigitsApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().frame(
+                minWidth: 400, maxWidth: 600,
+                minHeight: 600, maxHeight: 900)
         }
+        .windowResizability(.contentSize)
     }
 }
