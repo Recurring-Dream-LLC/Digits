@@ -97,7 +97,6 @@ struct StableUnits: View {
             Spacer()
         }
         .padding()
-        .frame(minHeight: 850)
         .navigationTitle("Stable Units")
     }
 }

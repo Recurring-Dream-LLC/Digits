@@ -55,9 +55,8 @@ struct ContentView: View {
                     StableUnits()
                 case .sideEffects:
                     SideEffects()
-
                 }
-            }
+            }.navigationSplitViewColumnWidth(min: 400, ideal: 400, max: 600)
         }
     }
 }

@@ -13,7 +13,6 @@ struct MonospaceDigits: View {
     
     var body: some View {
         VStack(spacing:20) {
-   
             // Prefer
             VStack(alignment: .leading) {
                 
@@ -97,7 +96,6 @@ struct MonospaceDigits: View {
             Spacer()
         }
         .padding()
-        .frame(minHeight: 850)
         .navigationTitle("Monospaced Digits")
     }
 }

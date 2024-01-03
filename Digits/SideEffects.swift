@@ -127,7 +127,6 @@ struct SideEffects: View {
             Spacer()
         }
         .padding()
-        .frame(minHeight: 450)
         .navigationTitle("Readable Detail and Rate")
     }
 }
