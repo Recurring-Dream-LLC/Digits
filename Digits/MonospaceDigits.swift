@@ -80,7 +80,7 @@ struct MonospaceDigits: View {
                         Text("Monospace Digits Modifier:\n[`.monospacedDigits`](https://developer.apple.com/documentation/swiftui/font/monospaceddigit())")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                         
-                        Text("Monospace Seconds:\n[AttributedString Extension](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/AttributedString%2BMonospaceSeconds.swift)")
+                        Text("Monospace Seconds:\n[AttributedString+MonospaceSeconds.swift](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/AttributedString%2BMonospaceSeconds.swift)")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                         
                         Text("This View:\n[MonospaceDigits.swift](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/MonospaceDigits.swift)")
