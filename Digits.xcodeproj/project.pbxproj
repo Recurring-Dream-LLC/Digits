@@ -15,7 +15,7 @@
 		72D441B82A438D5700A8BACE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72D441B72A438D5700A8BACE /* Preview Assets.xcassets */; };
 		72E8449A2B3B63E900CB2BE4 /* MonospaceDigits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E844992B3B63E900CB2BE4 /* MonospaceDigits.swift */; };
 		72E8449C2B3B654D00CB2BE4 /* FixedPrecision.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8449B2B3B654D00CB2BE4 /* FixedPrecision.swift */; };
-		72E8449E2B3B65EE00CB2BE4 /* LimitedDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8449D2B3B65EE00CB2BE4 /* LimitedDetail.swift */; };
+		72E8449E2B3B65EE00CB2BE4 /* ReadableDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8449D2B3B65EE00CB2BE4 /* ReadableDetail.swift */; };
 		72E844A02B3B67A500CB2BE4 /* AttributedString+MonospaceSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E8449F2B3B67A500CB2BE4 /* AttributedString+MonospaceSeconds.swift */; };
 		72E844A22B3B7AD500CB2BE4 /* CentralTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E844A12B3B7AD500CB2BE4 /* CentralTimer.swift */; };
 		72E844A42B3B94A700CB2BE4 /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E844A32B3B94A700CB2BE4 /* Header.swift */; };
@@ -35,7 +35,7 @@
 		72D6F76B2B4239DE008766E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		72E844992B3B63E900CB2BE4 /* MonospaceDigits.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonospaceDigits.swift; sourceTree = "<group>"; };
 		72E8449B2B3B654D00CB2BE4 /* FixedPrecision.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FixedPrecision.swift; sourceTree = "<group>"; };
-		72E8449D2B3B65EE00CB2BE4 /* LimitedDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LimitedDetail.swift; sourceTree = "<group>"; };
+		72E8449D2B3B65EE00CB2BE4 /* ReadableDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReadableDetail.swift; sourceTree = "<group>"; };
 		72E8449F2B3B67A500CB2BE4 /* AttributedString+MonospaceSeconds.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AttributedString+MonospaceSeconds.swift"; sourceTree = "<group>"; };
 		72E844A12B3B7AD500CB2BE4 /* CentralTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CentralTimer.swift; sourceTree = "<group>"; };
 		72E844A32B3B94A700CB2BE4 /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
@@ -78,7 +78,7 @@
 				72D441B12A438D5700A8BACE /* ContentView.swift */,
 				72E844992B3B63E900CB2BE4 /* MonospaceDigits.swift */,
 				72E8449B2B3B654D00CB2BE4 /* FixedPrecision.swift */,
-				72E8449D2B3B65EE00CB2BE4 /* LimitedDetail.swift */,
+				72E8449D2B3B65EE00CB2BE4 /* ReadableDetail.swift */,
 				72B64B962B40A0B900BD5599 /* StableUnits.swift */,
 				72B64B982B40A12A00BD5599 /* SideEffects.swift */,
 				72E844A12B3B7AD500CB2BE4 /* CentralTimer.swift */,
@@ -179,7 +179,7 @@
 				72E844A42B3B94A700CB2BE4 /* Header.swift in Sources */,
 				72E844A82B3B983900CB2BE4 /* Styles.swift in Sources */,
 				72D441B22A438D5700A8BACE /* ContentView.swift in Sources */,
-				72E8449E2B3B65EE00CB2BE4 /* LimitedDetail.swift in Sources */,
+				72E8449E2B3B65EE00CB2BE4 /* ReadableDetail.swift in Sources */,
 				72E844A62B3B95E800CB2BE4 /* Sizes.swift in Sources */,
 				72E844A02B3B67A500CB2BE4 /* AttributedString+MonospaceSeconds.swift in Sources */,
 				72E844A22B3B7AD500CB2BE4 /* CentralTimer.swift in Sources */,

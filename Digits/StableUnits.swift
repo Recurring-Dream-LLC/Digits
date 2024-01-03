@@ -52,6 +52,7 @@ struct StableUnits: View {
                 .sectionStyle()
             }
             
+            // Discussion
             VStack(spacing:20) {
                 VStack(alignment: .leading) {
                     
@@ -62,6 +63,21 @@ struct StableUnits: View {
                         Text("Whenever possible, pick a reasonable unit and stick to it.\n\nAvoid changing units as values fluctuate or accumulate. Don’t force users to make mental conversions between changing units.")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                         
+                    }
+                    .sectionStyle()
+                }
+            }
+            
+            // Code
+            VStack(spacing:20) {
+                VStack(alignment: .leading) {
+                    
+                    Text("Code").font(.headline)
+                    
+                    VStack(alignment: .leading,spacing:15) {
+                        
+                        Text("This View:\n[StableUnits.swift](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/StableUnits.swift)")
+                            .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                     }
                     .sectionStyle()
                 }
@@ -81,7 +97,7 @@ struct StableUnits: View {
             Spacer()
         }
         .padding()
-        .frame(minHeight: 450)
+        .frame(minHeight: 850)
         .navigationTitle("Stable Units")
     }
 }

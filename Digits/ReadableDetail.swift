@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct LimitedDetail: View {
+struct ReadableDetail: View {
    // @State private var amount:Int = 1024
     @State private var hundredthsAmount:Double = 55.35
     @State private var tenthsAmount:Double = 55.35
@@ -75,6 +75,31 @@ struct LimitedDetail: View {
                     }
                 }
 
+                // Code
+                VStack(spacing:20) {
+                    VStack(alignment: .leading) {
+                        
+                        Text("Code").font(.headline)
+                        
+                        VStack(alignment: .leading,spacing:15) {
+                            
+                            VStack(alignment:.leading){
+                                Text("Precision Modifiers:")
+                                Text("[`.number`](https://developer.apple.com/documentation/foundation/integerformatstyle/3870160-number)")
+                                    .frame(width: Sizes.discussionMinWidth,alignment: .leading)
+                                Text("[`.precision`](https://developer.apple.com/documentation/foundation/integerformatstyle/percent/3766881-precision)")
+                                Text("[`.integerLength`](https://developer.apple.com/documentation/foundation/numberformatstyleconfiguration/precision/3798918-integerlength)")
+                                Text("[`.fractionLength`](https://developer.apple.com/documentation/foundation/numberformatstyleconfiguration/precision/3767173-fractionlength)")
+                            }
+                            .frame(width: Sizes.discussionMinWidth,alignment: .leading)
+                            
+                            Text("This View:\n[ReadableDetail.swift](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/ReadableDetail.swift)")
+                                .frame(width: Sizes.discussionMinWidth,alignment: .leading)
+                        }
+                        .sectionStyle()
+                    }
+                }
+
                 // Receive Timers
                 .onReceive(secondTimer) { date in
                     secondsAmount += 1.024
@@ -89,11 +114,11 @@ struct LimitedDetail: View {
                 Spacer()
             }
             .padding()
-            .frame(minHeight: 450)
+            .frame(minHeight: 850)
             .navigationTitle("Readable Detail and Rate")
         }
 }
 
 #Preview {
-    LimitedDetail()
+    ReadableDetail()
 }
