@@ -50,7 +50,7 @@ struct ContentView: View {
                 case .fixedPrecision:
                     FixedPrecision()
                 case .limitedDetail:
-                    LimitedDetail()
+                    ReadableDetail()
                 case .units:
                     StableUnits()
                 case .sideEffects:

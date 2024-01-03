@@ -102,6 +102,23 @@ struct SideEffects: View {
                 }
             }
             
+            
+            // Code
+            VStack(spacing:20) {
+                VStack(alignment: .leading) {
+                    
+                    Text("Code").font(.headline)
+                    
+                    VStack(alignment: .leading,spacing:15) {
+                        
+                        Text("This View:\n[SideEffects.swift](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/SideEffects.swift)")
+                            .frame(width: Sizes.discussionMinWidth,alignment: .leading)
+                    }
+                    .sectionStyle()
+                }
+            }
+            
+            
             // Receive Timers
             .onReceive(secondTimer) { date in
                 secondsAmount += 1.024

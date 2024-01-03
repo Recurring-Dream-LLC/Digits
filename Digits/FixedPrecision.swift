@@ -94,20 +94,17 @@ struct FixedPrecision: View {
                     VStack(alignment: .leading,spacing:15) {
                         
                         VStack(alignment:.leading){
-                            Text("Precisions Modifiers")
-                            Text("[`.number`](https://developer.apple.com/documentation/foundation/integerformatstyle/3870160-number())")
+                            Text("Precision Modifiers:")
+                            Text("[`.number`](https://developer.apple.com/documentation/foundation/integerformatstyle/3870160-number)")
                                 .frame(width: Sizes.discussionMinWidth,alignment: .leading)
-                            Text("[`.precision`](https://developer.apple.com/documentation/foundation/integerformatstyle/percent/3766881-precision/())")
-                            Text("[`.integerLength`](https://developer.apple.com/documentation/foundation/numberformatstyleconfiguration/precision/3798918-integerlength/())")
-                            Text("[`.fractionLength`](https://developer.apple.com/documentation/swiftui/font/monospaceddigit())")
-
-                                .frame(width: Sizes.discussionMinWidth,alignment: .leading)
-
+                            Text("[`.precision`](https://developer.apple.com/documentation/foundation/integerformatstyle/percent/3766881-precision)")
+                            Text("[`.integerLength`](https://developer.apple.com/documentation/foundation/numberformatstyleconfiguration/precision/3798918-integerlength)")
+                            Text("[`.fractionLength`](https://developer.apple.com/documentation/foundation/numberformatstyleconfiguration/precision/3767173-fractionlength)")
                         }
-                        
-                        Text("Monospace Seconds Sample:\n[*Digits Source Code*](http://github.com)")
-                            .frame(width: Sizes.discussionMinWidth,alignment: .leading)
-                        
+                        .frame(width: Sizes.discussionMinWidth,alignment: .leading)
+
+                        Text("This View:\n[FixedPrecision.swift](https://github.com/Recurring-Dream-LLC/Digits/blob/main/Digits/FixedPrecision.swift)")
+                        .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                     }
                     .sectionStyle()
                 }
