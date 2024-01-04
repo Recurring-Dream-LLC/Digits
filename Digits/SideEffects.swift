@@ -32,11 +32,25 @@ struct SideEffects: View {
                 }
             }
             
+            
+            // Avoid
+            VStack(alignment: .leading) {
+                
+                Header(title: "Bounding Box Reacts to Content", recommended: false)
+                
+                VStack(alignment: .center,spacing:15){
+                    
+                    ConversationalClock().font(.title3)
+                }
+                .padding()
+                .background(in: RoundedRectangle(cornerRadius: 10.0))
+            }
+            
             // Prefer #2
             VStack(spacing:20) {
                 VStack(alignment: .leading) {
                     
-                    Header(title: "Stable Slider Size", recommended: true)
+                    Header(title: "Stable Slider Width", recommended: true)
                     
                     VStack(alignment: .center,spacing:15){
                                                 
@@ -55,19 +69,7 @@ struct SideEffects: View {
                 }
             }
 
-            
-            // Avoid
-            VStack(alignment: .leading) {
-                
-                Header(title: "Bounding Box Reacts to Content", recommended: false)
-                
-                VStack(alignment: .center,spacing:15){
-                    
-                    ConversationalClock().font(.title3)
-                }
-                .padding()
-                .background(in: RoundedRectangle(cornerRadius: 10.0))
-            }
+    
             
             // Avoid2
             VStack(alignment: .leading) {
@@ -127,7 +129,7 @@ struct SideEffects: View {
             Spacer()
         }
         .padding()
-        .navigationTitle("Readable Detail and Rate")
+        .navigationTitle("Side Effects")
     }
 }
 

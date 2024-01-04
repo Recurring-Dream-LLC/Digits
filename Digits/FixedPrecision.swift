@@ -29,13 +29,6 @@ struct FixedPrecision: View {
                         
                         // Fixed Time
                         Text("\(minutes.formatted(.number.precision(.integerLength(0...2)))):\(seconds.formatted(.number.precision(.integerLength(2)))) Remaining").monospacedDigit().font(.title)
-                        
-                        // Slider
-                        HStack{
-                            Slider(value: $sliderValue, in: 150...200).frame(width:180)
-                            Text(sliderValue.formatted(.number.precision(.fractionLength(1)))).font(.body).monospacedDigit()
-                        }
-
                     }
                     .sectionStyle()
                 }
@@ -58,16 +51,41 @@ struct FixedPrecision: View {
                     else {
                         Text("\(minutes) Remaining").monospacedDigit().font(.title)
                     }
+                }
+                .sectionStyle()
+            }
+            
+            // Prefer
+            VStack(spacing:20) {
+                VStack(alignment: .leading) {
+                    
+                    Header(title: "Fixed Precision", recommended: true)
+                    
+                    VStack(alignment: .center,spacing:15){
+                        
+                        // Slider
+                        HStack{
+                            Slider(value: $sliderValue, in: 150...200).frame(width:180)
+                            Text(sliderValue.formatted(.number.precision(.fractionLength(1)))).font(.body).monospacedDigit()
+                        }
+                    }
+                    .sectionStyle()
+                }
+            }
+            
+            // Avoid
+            VStack(alignment: .leading) {
+                
+                Header(title: "Variable Precision", recommended: false)
                     
                     // Slider
                     HStack{
                         Slider(value: $sliderValue, in: 150...200).frame(width:180)
                         Text(sliderValue.formatted(.number.precision(.fractionLength(0...1)))).font(.body).monospacedDigit().frame(width:40)
                     }
-
-                }
                 .sectionStyle()
             }
+
             
             // Discussion
             VStack(spacing:20) {
