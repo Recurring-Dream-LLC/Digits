@@ -59,7 +59,7 @@ struct MonospaceDigits: View {
                     
                     VStack(alignment: .center,spacing:15) {
                         
-                        Text("Use monospaced digits for changing values.\n\nFonts typically default to proportionally sized digits, where character width varies, causing the display to shift and resize as values change.\n\nSome designs mix styles, applying monospace only to faster changing digits. This works best when the rate of change is predictable, such as seconds on a clock.")
+                        Text("Use monospaced digits for changing values. Each character has same width, so the display stays stable as values change.\n\nFonts typically default to proportionally sized digits, with varying character width, causing the display to shift and resize.\n\nSome designs mix styles, applying monospace only to faster changing digits. This compromise allows the slower changing digits to retain a pleasing and compact proportional layout, with fewer size changes to the whole display.")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                             .lineLimit(50)
 

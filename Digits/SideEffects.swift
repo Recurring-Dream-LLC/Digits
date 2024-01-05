@@ -97,7 +97,7 @@ struct SideEffects: View {
                     
                     VStack(alignment: .center,spacing:15) {
                         
-                        Text("Many User Interface toolkits react to the size of their content, where an element with a changing size can cause other elements to scale or rearrange. \n\nThis magnifies digit design errors.")
+                        Text("Many user interface toolkits react to the size of their content, which becomes problematic when an element with a changing size causes other elements to scale or rearrange, thus magnifying digit design errors.")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                     }
                     .sectionStyle()

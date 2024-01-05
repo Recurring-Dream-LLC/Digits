@@ -60,7 +60,7 @@ struct StableUnits: View {
                     
                     VStack(alignment: .center,spacing:15) {
                         
-                        Text("Whenever possible, pick a reasonable unit and stick to it.\n\nAvoid changing units as values fluctuate or accumulate. Don’t force users to make mental conversions between changing units.")
+                        Text("Avoid changing units as values fluctuate or accumulate. Whenever possible, pick a reasonable unit and stick to it. Don't force users to make mental conversions between changing units.")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                         
                     }

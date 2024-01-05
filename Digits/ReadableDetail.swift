@@ -9,8 +9,8 @@ import SwiftUI
 
 struct ReadableDetail: View {
    // @State private var amount:Int = 1024
-    @State private var hundredthsAmount:Double = 55.35
-    @State private var tenthsAmount:Double = 55.35
+    @State private var tenthSecondsAmount:Double = 55.35
+    @State private var halfSecondsAmount:Double = 55.35
     @State private var secondsAmount:Double = 55.35
 
     var body: some View {
@@ -26,12 +26,12 @@ struct ReadableDetail: View {
                             
                             // Fixed Amount
                             VStack{
-                                Text("\(tenthsAmount.formatted(.number.precision(.fractionLength(1)))) MB Transferred").monospacedDigit().font(.title)
+                                Text("\(halfSecondsAmount.formatted(.number.precision(.fractionLength(1)))) MB Transferred").monospacedDigit().font(.title)
                                 Text("One Fractional Digit, Updated Twice per Second").font(.caption)
                             }
                             
                             VStack{
-                                Text("\(tenthsAmount.formatted(.number.precision(.fractionLength(0)))) MB Transferred").monospacedDigit().font(.title)
+                                Text("\(halfSecondsAmount.formatted(.number.precision(.fractionLength(0)))) MB Transferred").monospacedDigit().font(.title)
                                 Text("No Fractional Digits, Updated Once per Second").font(.caption)
                             }
                             
@@ -51,8 +51,8 @@ struct ReadableDetail: View {
 
                         // Too many fractional digits
                         VStack{
-                            Text("\(hundredthsAmount.formatted(.number.precision(.fractionLength(2)))) MB Transferred").monospacedDigit().font(.title)
-                            Text("Two Fractional Digits, Upated 100 Times per Second").font(.caption)
+                            Text("\(tenthSecondsAmount.formatted(.number.precision(.fractionLength(2)))) MB Transferred").monospacedDigit().font(.title)
+                            Text("Two Fractional Digits, Update 10 Times per Second").font(.caption)
                         }
 
 
@@ -68,7 +68,7 @@ struct ReadableDetail: View {
                         
                         VStack(alignment: .center,spacing:15) {
                             
-                            Text("Display values without excessive detail. Long fractional values provide little extra information to users, especially when digits are changing too fast to be read.\n\nLimiting updates to once or twice per second still gives a sense of progress without being overwhelming or unreadable.")
+                            Text("Display values without excessive detail. Long fractional values provide little extra information to users, especially when digits change too quickly to be read.\n\nLimiting updates to once or twice per second still gives a sense of progress without overwhelming users or making the values unreadable.")
                                 .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                         }
                         .sectionStyle()
@@ -105,10 +105,10 @@ struct ReadableDetail: View {
                     secondsAmount += 1.024
                 }
                 .onReceive(halfSecondTimer) { date in
-                    tenthsAmount += 0.512
+                    halfSecondsAmount += 0.512
                 }
                 .onReceive(tenthSecondTimer) { date in
-                    hundredthsAmount += 0.1024
+                    tenthSecondsAmount += 0.1024
                 }
 
                 Spacer()

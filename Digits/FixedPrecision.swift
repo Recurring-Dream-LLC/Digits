@@ -95,7 +95,7 @@ struct FixedPrecision: View {
                     
                     VStack(alignment: .center,spacing:15) {
                         
-                        Text("Format values with fixed precision, where the number of digits in the fractional or trailing portion remain the same, without rounding or dropping zeros.")
+                        Text("Format values with fixed precision, so the number of digits in the fractional or trailing portion of the values remains the same, without rounding or dropping zeros.")
                             .frame(width: Sizes.discussionMinWidth,alignment: .leading)
                         
                     }
